@@ -1,11 +1,11 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:figmatoflutter/features/dashboard/utils/box.dart';
+import 'package:figmatoflutter/features/dashboard/utils/box_icon.dart';
 import 'package:figmatoflutter/features/dashboard/utils/delivery_icon.dart';
 import 'package:figmatoflutter/features/dashboard/utils/line_four.dart';
 import 'package:figmatoflutter/features/dashboard/utils/line_one.dart';
 import 'package:figmatoflutter/features/dashboard/utils/line_three.dart';
-import 'package:figmatoflutter/features/dashboard/utils/partial_box.dart';
-import 'package:figmatoflutter/features/dashboard/utils/return_box.dart';
+import 'package:figmatoflutter/features/dashboard/utils/partial_box_icon.dart';
+import 'package:figmatoflutter/features/dashboard/utils/return_box_icon.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/line_two.dart';
@@ -29,7 +29,7 @@ List<OverviewSection> overviewSections = [
   OverviewSection(
       icon: CustomPaint(
         size: const Size(22, 22),
-        painter: Box(),
+        painter: BoxIcon(),
       ),
       graph: CustomPaint(
         size: const Size(80, 80 * 0.45076923076923076),
@@ -53,7 +53,7 @@ List<OverviewSection> overviewSections = [
   OverviewSection(
       icon: CustomPaint(
         size: const Size(22, 22),
-        painter: PartialBox(),
+        painter: PartialBoxIcon(),
       ),
       graph: CustomPaint(
         size: const Size(80, 80 * 0.45076923076923076),
@@ -65,7 +65,7 @@ List<OverviewSection> overviewSections = [
   OverviewSection(
       icon: CustomPaint(
         size: const Size(22, 22),
-        painter: ReturnBox(),
+        painter: ReturnBoxIcon(),
       ),
       graph: CustomPaint(
         size: const Size(80, 80 * 0.45076923076923076),

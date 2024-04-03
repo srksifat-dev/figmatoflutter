@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Figma to Flutter',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xffef232f)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xffef232f)),
         textTheme: textTheme,
         useMaterial3: true,
       ),

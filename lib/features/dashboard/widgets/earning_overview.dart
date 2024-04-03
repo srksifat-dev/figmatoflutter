@@ -1,10 +1,9 @@
-
 import 'package:figmatoflutter/core/utils/device_size.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/dollar.dart';
-import '../utils/payment.dart';
-import '../utils/percentage.dart';
+import '../utils/dollar_icon.dart';
+import '../utils/payment_icon.dart';
+import '../utils/percentage_icon.dart';
 
 class EarningOverview extends StatelessWidget {
   const EarningOverview({
@@ -45,7 +44,7 @@ class EarningOverview extends StatelessWidget {
                 children: [
                   CustomPaint(
                     size: const Size(22, 22),
-                    painter: Dollar(),
+                    painter: DollarIcon(),
                   ),
                   Text(
                     "Earning",
@@ -56,10 +55,7 @@ class EarningOverview extends StatelessWidget {
                   ),
                   Text(
                     "\$625.48",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodySmall!
-                        .copyWith(
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
                           color: const Color(0xff01888A),
@@ -71,7 +67,7 @@ class EarningOverview extends StatelessWidget {
                 children: [
                   CustomPaint(
                     size: const Size(22, 22),
-                    painter: Percentage(),
+                    painter: PercentageIcon(),
                   ),
                   Text(
                     "Collection",
@@ -82,10 +78,7 @@ class EarningOverview extends StatelessWidget {
                   ),
                   Text(
                     "\$6225.48",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodySmall!
-                        .copyWith(
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
                           color: const Color(0xff01888A),
@@ -97,7 +90,7 @@ class EarningOverview extends StatelessWidget {
                 children: [
                   CustomPaint(
                     size: const Size(22, 22),
-                    painter: Payment(),
+                    painter: PaymentIcon(),
                   ),
                   Text(
                     "Balance",
@@ -108,10 +101,7 @@ class EarningOverview extends StatelessWidget {
                   ),
                   Text(
                     "\$1254.89",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodySmall!
-                        .copyWith(
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
                           fontSize: 15,
                           fontWeight: FontWeight.bold,
                           color: const Color(0xff01888A),

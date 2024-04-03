@@ -2,7 +2,6 @@ import 'package:figmatoflutter/core/utils/custom_button.dart';
 import 'package:figmatoflutter/core/utils/device_size.dart';
 import 'package:figmatoflutter/features/dashboard/screens/dashboard_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});

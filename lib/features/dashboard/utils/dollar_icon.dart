@@ -1,9 +1,6 @@
-import 'dart:ui' as ui;
-
 import 'package:flutter/material.dart';
 
-//Copy this CustomPainter code to the Bottom of the File
-class Dollar extends CustomPainter {
+class DollarIcon extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Path path_0 = Path();

@@ -1,10 +1,7 @@
 import 'package:figmatoflutter/core/utils/custom_button.dart';
 import 'package:figmatoflutter/core/utils/device_size.dart';
 import 'package:figmatoflutter/features/authentication/screens/auth_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -21,10 +18,10 @@ class OnboardingScreen extends StatelessWidget {
           child: Stack(
             alignment: Alignment.center,
             children: [
-              PageView(
+              PageView.builder(
                 controller: _pageController,
-                children: [
-                  Column(
+                itemCount: 3,
+                itemBuilder: (context,index)=>Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
@@ -45,53 +42,7 @@ class OnboardingScreen extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                     ],
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        "assets/images/onb_01.png",
-                        width: context.wp(70),
-                      ),
-                      SizedBox(
-                        height: context.hp(10),
-                      ),
-                      Text(
-                        "Get started on\nOrdering your Food",
-                        style: Theme.of(context).textTheme.titleLarge,
-                        textAlign: TextAlign.center,
-                      ),
-                      Text(
-                        "Please create an account or sign in to your existing account to start parcel delivery.",
-                        style: Theme.of(context).textTheme.bodySmall,
-                        textAlign: TextAlign.center,
-                      )
-                    ],
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        "assets/images/onb_01.png",
-                        width: context.wp(70),
-                      ),
-                      SizedBox(
-                        height: context.hp(10),
-                      ),
-                      Text(
-                        "Get started on\nOrdering your Food",
-                        style: Theme.of(context).textTheme.titleLarge,
-                        textAlign: TextAlign.center,
-                      ),
-                      Text(
-                        "Please create an account or sign in to your existing account to start parcel delivery.",
-                        style: Theme.of(context).textTheme.bodySmall,
-                        textAlign: TextAlign.center,
-                      )
-                    ],
-                  ),
-                ],
-              ),
+                  ),),
               Positioned(
                 bottom: context.hp(40),
                 child: SmoothPageIndicator(
@@ -107,6 +58,8 @@ class OnboardingScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+
+                    // Skip Button skip all steps and go to the last step directly
                     customButton(
                       onPressed: () {
                         _pageController.animateToPage(2,
@@ -122,6 +75,8 @@ class OnboardingScreen extends StatelessWidget {
                     const SizedBox(
                       width: 16,
                     ),
+
+                    // Check out all steps then go to auth screen
                     customButton(
                       onPressed: () {
                         if (_pageController.page == 2) {

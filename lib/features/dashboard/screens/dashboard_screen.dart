@@ -1,9 +1,9 @@
 import 'package:figmatoflutter/core/utils/device_size.dart';
-import 'package:figmatoflutter/features/dashboard/utils/dashboard.dart';
-import 'package:figmatoflutter/features/dashboard/utils/dollar.dart';
+import 'package:figmatoflutter/features/dashboard/utils/dashboard_icon.dart';
+import 'package:figmatoflutter/features/dashboard/utils/dollar_icon.dart';
 import 'package:figmatoflutter/features/dashboard/utils/notification_icon.dart';
-import 'package:figmatoflutter/features/dashboard/utils/parcel.dart';
-import 'package:figmatoflutter/features/dashboard/utils/person.dart';
+import 'package:figmatoflutter/features/dashboard/utils/parcel_icon.dart';
+import 'package:figmatoflutter/features/dashboard/utils/person_icon.dart';
 import 'package:figmatoflutter/features/dashboard/widgets/overview.dart';
 import 'package:figmatoflutter/features/dashboard/widgets/pending_parcels.dart';
 import 'package:flutter/material.dart';
@@ -65,7 +65,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
         ),
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                // TODO: Go to Notification screen
+              },
               icon: CustomPaint(
                 size: const Size(22, 22),
                 painter: NotificationIcon(),
@@ -89,7 +91,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             BottomNavigationBarItem(
                 icon: CustomPaint(
                   size: const Size(22, 22),
-                  painter: Dashboard(),
+                  painter: DashboardIcon(),
                 ),
                 activeIcon: CustomPaint(
                   size: const Size(22, 22),
@@ -99,7 +101,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             BottomNavigationBarItem(
                 icon: CustomPaint(
                   size: const Size(22, 22),
-                  painter: Dollar(),
+                  painter: DollarIcon(),
                 ),
                 activeIcon: CustomPaint(
                   size: const Size(22, 22),
@@ -109,7 +111,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             BottomNavigationBarItem(
                 icon: CustomPaint(
                   size: const Size(22, 22),
-                  painter: Parcel(),
+                  painter: ParcelIcon(),
                 ),
                 activeIcon: CustomPaint(
                   size: const Size(22, 22),
@@ -119,14 +121,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
             BottomNavigationBarItem(
                 icon: CustomPaint(
                   size: const Size(22, 22),
-                  painter: Person(),
+                  painter: PersonIcon(),
                 ),
                 activeIcon: CustomPaint(
                   size: const Size(22, 22),
                   painter: PersonActive(),
                 ),
                 label: "Profile"),
-          ]),
+          ],),
       body: Stack(
         alignment: Alignment.topCenter,
         children: [
@@ -138,9 +140,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
           const Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              // Earning Overview Section
               EarningOverview(),
+
+              // Overview Section
               Overview(),
-              Expanded(child: PendingParcels())
+
+              // All Pending Parcels Section
+              Expanded(
+                child: PendingParcels(),
+              )
             ],
           )
         ],

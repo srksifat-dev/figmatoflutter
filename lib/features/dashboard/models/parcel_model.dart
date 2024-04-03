@@ -14,7 +14,18 @@ class ParcelModel {
 }
 
 List<ParcelModel> parcels = [
-  ParcelModel(title: "Exclusive Cotton Fiber Head Pillow", size: 34, weight: 2.5, price: 1254.89, imageUrl: "assets/images/parcel01.png",),
-  ParcelModel(title: "Exclusive Cotton Fiber Head Pillow", size: 34, weight: 2.5, price: 1254.89, imageUrl: "assets/images/parcel02.png",),
-
+  ParcelModel(
+    title: "Exclusive Cotton Fiber Head Pillow",
+    size: 34,
+    weight: 2.5,
+    price: 1254.89,
+    imageUrl: "assets/images/parcel01.png",
+  ),
+  ParcelModel(
+    title: "Exclusive Cotton Fiber Head Pillow",
+    size: 34,
+    weight: 2.5,
+    price: 1254.89,
+    imageUrl: "assets/images/parcel02.png",
+  ),
 ];

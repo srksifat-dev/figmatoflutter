@@ -1,8 +1,6 @@
-import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 
-//Copy this CustomPainter code to the Bottom of the File
 class DeliveryIcon extends CustomPainter {
     @override
     void paint(Canvas canvas, Size size) {

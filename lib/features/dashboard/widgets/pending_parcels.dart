@@ -1,4 +1,3 @@
-import 'package:figmatoflutter/core/utils/device_size.dart';
 import 'package:figmatoflutter/features/dashboard/models/parcel_model.dart';
 import 'package:flutter/material.dart';
 
