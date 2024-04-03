@@ -1,16 +1,31 @@
-# figmatoflutter
 
-A new Flutter project.
+Figma to Flutter project
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Splash Screen
+
+<img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_195338.jpg" alt="alt text" height="500"/>
+
+Onboarding Screen
+
+<img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_193903.jpg" alt="alt text" height="500"/>
+
+
+Authentication Screen
+
+<img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_193912.jpg" alt="alt text" height="500"/>
+
+
+Dashboard Screen
+
+<img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_193923.jpg" alt="alt text" height="500"/>
+
+
+Screen Record of the App
+
+https://github.com/srksifat-dev/figmatoflutter/assets/56959596/28fa1b3b-4ff5-473b-bc1a-23b7addbd095
+
