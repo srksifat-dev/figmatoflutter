@@ -6,23 +6,23 @@ Figma to Flutter project
 
 ## Screenshots
 
-Splash Screen
+Given Figma design vs Flutter developed Splash Screen
 
-<img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_195338.jpg" alt="alt text" height="500"/>
+<img src="https://github.com/srksifat-dev/public_assets/raw/main/1.png" alt="alt text" height="500"/> vs <img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_195338.jpg" alt="alt text" height="500"/>
 
-Onboarding Screen
+Given Figma design vs Flutter developed Onboarding Screen
 
-<img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_193903.jpg" alt="alt text" height="500"/>
-
-
-Authentication Screen
-
-<img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_193912.jpg" alt="alt text" height="500"/>
+<img src="https://github.com/srksifat-dev/public_assets/raw/main/2.png" alt="alt text" height="500"/> vs <img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_193903.jpg" alt="alt text" height="500"/>
 
 
-Dashboard Screen
+Given Figma design vs Flutter developed Authentication Screen
 
-<img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_193923.jpg" alt="alt text" height="500"/>
+<img src="https://github.com/srksifat-dev/public_assets/raw/main/Login.png" alt="alt text" height="500"/> vs <img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_193912.jpg" alt="alt text" height="500"/>
+
+
+Given Figma design vs Flutter developed Dashboard Screen
+
+<img src="https://github.com/srksifat-dev/public_assets/raw/main/Dashboard.png" alt="alt text" height="500"/> vs <img src="https://github.com/srksifat-dev/public_assets/raw/main/Screenshot_20240403_193923.jpg" alt="alt text" height="500"/>
 
 
 Screen Record of the App
